@@ -1,0 +1,162 @@
+body {
+   
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+header {
+    
+    background-color: #333;
+    color: #fff;
+    padding-left:20px ;
+    padding-top:20px ;
+    padding-right: 20px;
+}
+
+header p{
+    text-align: end;
+}
+
+nav{
+    background-color: #d8d2d2;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+   
+    
+
+}
+
+h1{
+    scroll-margin-top: 70px;
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-size: large;
+   
+}
+
+
+nav ul li a {
+    
+    text-decoration: none;
+    padding: 10px;
+    
+}
+
+
+
+.bodie{
+    display: flex;
+    flex-direction: row;
+}
+
+
+ main{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: antiquewhite;
+ }
+
+main h1{
+    text-align: center;
+}
+
+.photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    
+    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: antiquewhite;
+}
+
+.photos img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+     
+
+}
+
+.enlarged {
+    width: 400px; /* Increase the size upon enlargement */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.lanscape{
+    width: 450px; 
+    height: 300px;
+}
+.potrate{
+    width:  350px;
+    height: 500px; 
+}
+main p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+   
+    bottom: 0;
+    width: 100%;
+}
+
+/* Existing CSS styles */
+
+@media only screen and (max-width: 1068px) {
+    .bodie {
+      flex-direction: column;
+    }
+  
+    .photos {
+      padding-top: 20px;
+      margin-right: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .photos img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .lanscape,
+    .potrate {
+      width: auto;
+      height: auto;
+    }
+  
+    main {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  
+
+
