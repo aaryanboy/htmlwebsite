@@ -1,4 +1,4 @@
-body {
+  body {
    
     margin: 0;
     padding: 0;
@@ -16,11 +16,12 @@ body {
 
 header {
     
-    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
     color: #000000;
     padding-left:20px ;
     padding-top:0px ;
     padding-right: 20px;
+    
   
 }
 
@@ -38,7 +39,7 @@ header h1{
     
 }
 nav{
-    background-color: #C7C8CC;
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 1),rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -66,11 +67,11 @@ nav ul li {
 
 nav ul li button {
     border: none;
-    background-color: #C7C8CC; /* Change to your desired background color */
-   
-    padding: 8px 16px;
-    border-radius: 5px;
+    background-color: #7BC9FF; /* Change to your desired background color */
+    padding: 16px 16px;
+    border-radius: 40px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li button:hover {
@@ -84,8 +85,51 @@ nav ul li a {
     
 }
 
+.belownavphoto {
+    width: auto; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+  
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    opacity:0.85 ;
+  
+  }
 
+  .gototopbutton{
+    
+   
+    height: 55px;
+    width: 55px;
+    border-radius: 450%;
+    font-weight: 600;
+    opacity: 0.98;
+    
+    border: none;
+    cursor: pointer;
+    background: #000000;
+    position: fixed; /* Fix button position */
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+  
+  .gototopbutton a{
+    font-family: PlusJakartaSans, -apple-system, BlinkMacSystemFont, Segoe UI,
+      Roboto, Oxygen, Cantarell, Helvetica Neue, Ubuntu, sans-serif;
+    font-size: 1rem;
+    color: #ddd;
+    text-decoration: none;
+  }
 
+  
+  .gototopbutton:hover {
+    background: #5c5858;
+  }
+  
+  
 .bodie{
     padding-top: 10px;
     display: flex;
@@ -138,6 +182,7 @@ main h1{
     height: auto; 
 }
 main p {
+    text-align: justify;
     padding-left: 50px;
     padding-right: 50px;
 }
